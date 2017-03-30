@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		185BAB7F1E8D4643002D35B4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 185BAB7E1E8D4643002D35B4 /* main.cpp */; };
+		185BAB861E8D484F002D35B4 /* libopencv_highgui.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 185BAB851E8D484F002D35B4 /* libopencv_highgui.3.2.0.dylib */; };
+		185BAB881E8D48FF002D35B4 /* libopencv_core.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 185BAB871E8D48FF002D35B4 /* libopencv_core.3.2.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		185BAB7B1E8D4643002D35B4 /* objectTracking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = objectTracking; sourceTree = BUILT_PRODUCTS_DIR; };
 		185BAB7E1E8D4643002D35B4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		185BAB851E8D484F002D35B4 /* libopencv_highgui.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.3.2.0.dylib; path = ../../opencv/build/lib/libopencv_highgui.3.2.0.dylib; sourceTree = "<group>"; };
+		185BAB871E8D48FF002D35B4 /* libopencv_core.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.2.0.dylib; path = ../../opencv/build/lib/libopencv_core.3.2.0.dylib; sourceTree = "<group>"; };
+		185BAB8D1E8D5F4C002D35B4 /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185BAB861E8D484F002D35B4 /* libopencv_highgui.3.2.0.dylib in Frameworks */,
+				185BAB881E8D48FF002D35B4 /* libopencv_core.3.2.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +48,8 @@
 		185BAB721E8D4642002D35B4 = {
 			isa = PBXGroup;
 			children = (
+				185BAB871E8D48FF002D35B4 /* libopencv_core.3.2.0.dylib */,
+				185BAB851E8D484F002D35B4 /* libopencv_highgui.3.2.0.dylib */,
 				185BAB7D1E8D4643002D35B4 /* objectTracking */,
 				185BAB7C1E8D4643002D35B4 /* Products */,
 			);
@@ -57,6 +66,7 @@
 		185BAB7D1E8D4643002D35B4 /* objectTracking */ = {
 			isa = PBXGroup;
 			children = (
+				185BAB8D1E8D5F4C002D35B4 /* lbpcascade_frontalface.xml */,
 				185BAB7E1E8D4643002D35B4 /* main.cpp */,
 			);
 			path = objectTracking;
@@ -218,6 +228,28 @@
 		185BAB831E8D4643002D35B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /Users/rishabh/Documents/opencv/build/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -225,6 +257,28 @@
 		185BAB841E8D4643002D35B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /Users/rishabh/Documents/opencv/build/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
