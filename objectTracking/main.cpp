@@ -26,6 +26,8 @@ int main(void )
     //We'll load the lbpcascade_frontalface.xml containing the rules to detect faces.
     //The file should be right next to the binary.
     if(!faceCascade.load("/Users/rishabh/Documents/Git-Repo/objectTracking/objectTracking/lbpcascade_frontalface.xml"))
+    //if(!faceCascade.load("/Users/rishabh/Documents/Git-Repo/objectTracking/objectTracking/haarcascade_frontalface_default.xml"))
+    //if(!faceCascade.load("/Users/rishabh/Documents/Git-Repo/objectTracking/objectTracking/frontalEyes35x16.xml"))
     {
         std::cout << "Failed to load cascade classifier" << std::endl;
         return -1;
@@ -54,7 +56,7 @@ int main(void )
                                      0 | CV_HAAR_SCALE_IMAGE,
                                      cv::Size(30, 30));
         
-        //Here we draw the rectangles onto the image with a red border of thikness 2.
+        //Here we draw the rectangles onto the image with a red border of thikness 4.
         for( size_t i = 0; i < faces.size(); i++ )
             cv::rectangle(cameraFrame, faces[i], cv::Scalar(0, 0, 255), 4);
         

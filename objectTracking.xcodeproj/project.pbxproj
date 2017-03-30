@@ -30,6 +30,8 @@
 		185BAB851E8D484F002D35B4 /* libopencv_highgui.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.3.2.0.dylib; path = ../../opencv/build/lib/libopencv_highgui.3.2.0.dylib; sourceTree = "<group>"; };
 		185BAB871E8D48FF002D35B4 /* libopencv_core.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.2.0.dylib; path = ../../opencv/build/lib/libopencv_core.3.2.0.dylib; sourceTree = "<group>"; };
 		185BAB8D1E8D5F4C002D35B4 /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface.xml; sourceTree = "<group>"; };
+		185BAB8E1E8DB781002D35B4 /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		185BAB901E8DB9D7002D35B4 /* frontalEyes35x16.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = frontalEyes35x16.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,8 @@
 		185BAB7D1E8D4643002D35B4 /* objectTracking */ = {
 			isa = PBXGroup;
 			children = (
+				185BAB901E8DB9D7002D35B4 /* frontalEyes35x16.xml */,
+				185BAB8E1E8DB781002D35B4 /* haarcascade_frontalface_default.xml */,
 				185BAB8D1E8D5F4C002D35B4 /* lbpcascade_frontalface.xml */,
 				185BAB7E1E8D4643002D35B4 /* main.cpp */,
 			);
